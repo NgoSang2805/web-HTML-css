@@ -1,0 +1,463 @@
+/* reset css */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+/* 
+1 từ ngoài vào trong
+2 từ trên xuống dưới
+3 tổng quan đến chi tiết
+*/
+/* 
+1 vị trí
+2 kích thước
+3 màu sắc
+4 kiểu dáng(font,hình ,...)
+*/
+/* CSS chung */
+
+.col{
+float: left;
+padding-left: 8px;
+padding-right: 8px;
+}
+.col-half{
+    width: 50%;
+}
+.col-full{
+    width: 100%;
+}
+.contact-in4{
+    font-size: 18px;
+    line-height: 1.5;
+}
+.contact-in4 i[class*="ti-"]{
+width: 30px;
+display: inline-block;
+
+}
+.mt-8{
+    margin-top: 8px !important;
+}
+.mt-16{
+    margin-top: 16px !important;
+}
+
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#main{
+
+}
+
+#header{
+height: 46px;
+background-color: black;
+position:fixed;
+top: 0;
+width: 100%;
+z-index: 1;
+}
+#nav{
+    display: inline-block;
+}
+#nav >li{
+    display: inline-block;
+    position: relative;
+}
+#nav .subnav li:hover a,
+#nav> li:hover> a{
+    display: block;
+    color: #000;
+    background-color: #ccc;
+}
+
+#nav .subnav {
+    display: none;
+   position: absolute;
+    background-color: #fff;
+    line-height: 36px;
+    min-width: 160px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    top:100%;
+    left: 0;
+}
+
+
+#nav .subnav  a{
+    color: #000;
+    padding: 0 12px;
+}
+.subnav li a{
+    text-decoration: none;
+}
+#nav >li> a{
+    color: white;
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    
+}
+#nav, .subnav {
+    list-style-type: none;
+    
+}
+#nav li:hover .subnav {
+    display: block;
+}
+#header .search-buton{
+    float: right;
+    line-height: 46px;
+    width: 62px;
+    height: 46px;
+    padding: 0 21px;
+    cursor: pointer;
+    
+}
+#header .search-buton:hover{
+    background-color: #f44336;
+}
+#header .search-icon{
+    color: #fff;
+    font-size: 20px;
+}
+/* #slider{
+   padding-top: 50%;
+    margin-top: 46px;
+    background: url('/assets/img/slider/jax.jpg') top center / cover no-repeat;
+} */
+#slider .text-contain{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 48px;
+    text-align: center;
+    color: #fff;
+}
+#slider .text-heading{
+font-size: 30px;
+padding-bottom: 20px;
+}
+#slider .text-deception{
+
+}
+           
+#content{
+
+}
+#content .haeding-slogan-top{
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 16px;
+    padding-left: 16px;
+}
+#content .slogan-top{
+    text-align: center;
+    padding-top: 48px;
+    letter-spacing: 3px;
+    font-weight: 300;
+
+}
+#content .slogan-sub{
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 40px;
+    font-style: italic;
+    opacity: 0.6;
+}
+#content .about{
+    line-height: 1.6;
+    text-align: justify;
+}
+#content .hot-champ{
+ padding-top: 48px;
+ padding-bottom: 48px;
+}
+#content .champ1, .champ2, .champ3{
+width: 32%;
+display:inline-block;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+
+}
+#content .name-champ{
+    padding-bottom: 15px;
+}
+#content .hot-champ .img-champ{
+    border-radius: 5px;
+    object-fit: cover;
+}
+#content .MID{
+    width: 100%;
+    background-color:#000;
+}
+#content .mid-option{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+#content .slogan-mid{
+    text-align: center;
+    padding-top: 48px;
+    letter-spacing: 3px;
+    font-weight: 300;
+    color: #fff;
+
+}
+#content .slogan-sub-mid{
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-style: italic;
+    opacity: 0.6;
+    color: #fff;
+}
+#content .mid-style{
+    background-color: #fff;
+    list-style: none;  
+   
+}
+
+#content .mid-style .mid-1, .mid-2, .mid-3{
+    line-height: 40px;
+    border-bottom: 1px solid #ddd ;
+    padding-left: 12px;
+    color: #757575;
+}
+#content .level{
+    background-color: #f44336 !important;
+    color: #fff;
+    padding: 3px;
+    margin-left: 5px;
+    
+}
+#content .level-3{
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+    margin-top: 7px;
+    text-align: center;
+    border-radius: 50%;
+    float: right;
+    margin-right: 20px;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+}
+#content .mid-champ{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    height: 550px;
+    box-sizing: inherit;
+}
+.mid-champ .satthu-champ, .dausi-champ, .phapsu-champ{
+    width: 32%;
+    background-color: #fff;
+    height: 400px;
+    display: inline-block;
+    box-sizing: inherit;
+    margin-bottom: 50px;
+   
+}
+.dausi-champ{
+    margin-left: 11.5px;
+}
+.phapsu-champ{
+margin-left: 11.5px;
+}
+.img-st{
+    width: 256px;
+    height: 200px;
+    object-fit: cover;
+}
+.img-st:hover{
+    opacity: 0.7;
+}
+.mid-name-champ{
+    font-weight: 500;
+    letter-spacing: 3px;
+    margin: 10px 10px;
+    
+}
+.style-champ{
+    opacity: 0.6;
+    margin: 10px 15px;
+    
+}
+.mota-champ{
+    margin: 10px 15px;
+}
+.btn{
+    
+    background-color: #000;
+    color: #fff;
+    width: 107px;
+    height: 38px;
+    margin-left: 20px;
+    margin-top: 25px;
+    border: none;
+    cursor: pointer;
+    
+}
+.btn:hover{
+    background-color: #ccc;
+    color: #000;
+}
+
+
+.modal{
+    
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.modal-contener{
+    background-color: #fff;
+    width: 900px;
+    max-width: calc(100% - 40px);
+    min-height: 400px;
+    position: relative;
+    animation: modalshow ease-in 0.4s;
+}
+.modal-header{
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: burlywood;
+    font-size: 30px;
+    letter-spacing: 4px;
+}
+.ti-bag{
+    padding-right: 15px;
+}
+.modal-close{
+    position: absolute;
+    right: 0;
+    color: #fff;
+    padding: 12px;
+    cursor: pointer;
+    opacity: 0.9;
+}
+.modal-close:hover{
+    background-color: #f44336;
+    color: #000;
+}
+.modal-body{
+    padding: 16px;
+}
+.modal-label{
+    display: block;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+.modal-input{
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    margin-bottom: 24px;
+}
+#buy-tickets{
+background-color: #757575;
+color: #fff;
+width: 100%;
+padding: 18px;
+font-size: 15px;
+border: none;
+}
+#buy-tickets:hover{
+    background-color: #ddd;
+}
+.modal-footer{
+    padding: 16px;
+    text-align: right;
+}
+.modal.open{
+    display: flex;
+}
+@keyframes modalshow{
+    from{
+        transform: translateY(-140px);
+        opacity: 0.2;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.form-control{
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+.contact-form .form-submit{
+    background-color: #000;
+    border: none;
+    padding: 10px 16px;
+    float: right;
+    color: #fff;
+
+}
+.contact{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 80px;
+}
+.form-submit:hover{
+    background-color: #757575;
+    color: #000;
+    cursor: pointer;
+}
+.footer-map{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.footer-mxh{
+width: 90%;
+margin-left: auto;
+    margin-right: auto;
+    padding: 50px 20px 20px;
+    text-align: center;
+    font-size: 20px;
+    opacity: 0.7;
+}
+.footer-mxh>i:hover{
+    opacity: 0.4;
+
+}
+.fotter-end{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    
+
+}
+.end{
+    text-align: center;
+    padding-bottom: 50px;
+    opacity: 0.7;
+}
